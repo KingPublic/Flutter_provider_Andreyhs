@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:global_state/global_state.dart'; // Pastikan jalur ini sesuai
+import 'package:global_state/global_state.dart';
 
 class AdvancedCounterApp extends StatelessWidget {
   @override
@@ -30,6 +30,34 @@ class AdvancedCounterApp extends StatelessWidget {
                     IconButton(
                       icon: const Icon(Icons.remove),
                       onPressed: () => globalState.decrement(index),
+                    ),
+                    IconButton(
+                      icon: const Icon(Icons.color_lens),
+                      onPressed: () {
+                        // Ubah warna menggunakan dialog
+                        showDialog(
+                          context: context,
+                          builder: (context) {
+                            return AlertDialog(
+                              title: const Text('Select Color'),
+                              content: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                children: Colors.primaries.map((color) {
+                                  return GestureDetector(
+                                    onTap: () {
+                                      globalState.updateColor(index, color);
+                                      Navigator.pop(context);
+                                    },
+                                    child: CircleAvatar(
+                                      backgroundColor: color,
+                                    ),
+                                  );
+                                }).toList(),
+                              ),
+                            );
+                          },
+                        );
+                      },
                     ),
                   ],
                 ),
