@@ -1,6 +1,4 @@
-Berikut adalah contoh **README.md** yang lengkap untuk proyek **Manajemen State Lanjutan di Flutter**:
 
-```markdown
 # Laporan Proyek: Manajemen State Lanjutan di Flutter
 
 ## Deskripsi Proyek
