@@ -1,0 +1,10 @@
+name: global_state
+description: Package for global state management.
+version: 0.0.1
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.0.5
