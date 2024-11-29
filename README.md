@@ -170,18 +170,18 @@ class CounterList extends StatelessWidget {
 }
 ```
 
-## Teknologi yang Digunakan
+## Alat yang Digunakan
 
 - **Flutter**: Framework utama untuk pengembangan aplikasi.
 - **Provider**: Untuk manajemen state global.
 - **ReorderableListView**: Untuk mendukung fitur drag-and-drop dalam mengatur ulang urutan counter.
+- **Pembuatan packages untuk global_state**: Sesuai dengan part2 di elearn.
 
 ## Cara Menjalankan Proyek
 
 1. **Clone repositori**:  
    ```bash
-   git clone https://github.com/username/flutter-advanced-state-management.git
-   cd flutter-advanced-state-management
+   git clone https://github.com/KingPublic/Flutter_provider_Andreyhs
    ```
 2. **Install dependensi**:  
    ```bash
